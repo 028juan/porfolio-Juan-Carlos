@@ -1,0 +1,519 @@
+*{
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.caja{
+    width: 100%;
+    height: 121px;
+    background-color: rgb(164, 172, 179);
+    padding: 0 20px;
+   
+}
+.menu{
+    max-width: 940px;
+    margin: auto;
+    height: 100%;
+}
+h1{
+    display: inline;
+
+}
+h1 img{
+    
+    width:80px;
+    border-radius: 90px;
+    margin-left: 70px;
+
+}
+.redes-sociales{
+    width: 100%;
+    padding: 50px;
+    
+}
+.redes-sociales a{
+    font-size: 40px;
+    padding: 10px;
+}
+nav{   
+      
+    position: fixed;
+    padding-bottom: 30px;
+    margin-right: 20px;
+    z-index: 99999;
+    display: inline-block;
+}
+
+
+nav li{
+    
+    margin-top: 20px;
+    display: inline-block;
+    padding-left: 25px;
+}
+nav a{
+    width: 100%;
+    
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all 300ms ease;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+    transform: scale(1.1);
+  
+}
+.icon-menu{
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+
+}
+#label-check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+#check-menu{
+    display: none;
+}
+.principal, .sobre-mi{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+    padding: 142px 50px;
+
+}
+.tecnologiaaaa{
+    width: 30%;
+    float:left;
+    margin: 0 50px 50px 0;
+    
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px#000000;
+}
+.tecnologiaaaa:hover{
+    opacity: 0.3;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin:0 0 1em;
+    clear: left;
+
+}
+.principal p{
+    margin:0 0 1em;
+    text-align: center;
+    font-size: 22px;
+}
+
+.sobre-mi p{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    width: 940px;
+}
+
+/*----------skills*/
+
+.skills{
+    padding: 142px 50px;
+    
+
+}
+.habilidades{
+   
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
+  
+}
+.habilidades h2{
+    text-align: center;
+    font-weight: bold;
+}
+.habilidades ul{
+    display: flex;
+    padding: 0;
+    width: 95%;
+    animation: cambio 15s infinite;   
+    animation-direction: alternate;
+}
+.habilidades li{
+    text-align: center; 
+    padding:30px 50px;
+    border:2px solid black;
+    border-radius: 20px;
+    margin: 10px 30px 10px 40px;
+    width: 100%;
+    background: #c1d40e;
+    
+    
+}
+
+.habilidades img{
+      
+    width: 150px;
+    height: 200px;
+    margin: 20px 10px;
+    
+
+   
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left:0;}
+    50%{margin-left: -50%;}
+    100%{margin-left: -100%;}
+    
+    
+
+}
+
+
+
+/*--------------hobbies*/
+
+.hobbies, .proyectos, .formulario{
+    width: 940px;
+    margin:0 auto;
+    padding: 142px 50px;
+}
+
+.hobbies li{
+    display: inline-block;
+    width: 40%;
+    padding: 30px 20px;
+    margin-left: 40px;
+    text-align: center;
+}
+.hobbies img{
+    width: 300px;
+    height: 260px;
+    margin:30px;
+    
+    box-shadow: 10px 20px 30px 15px #000000;
+    transition: 2s all;
+}
+.hobbies img:hover{
+    transform: rotate(-10deg);
+}
+  
+
+
+/*formacion*/
+.formacion{
+    width: 100%;
+    height: 500px;
+    padding: 142px 50px;
+}
+
+.academico-all{
+    width: 210px;
+    margin:auto;
+    perspective: 1000px;
+    position: relative;
+    
+}
+.contenedor{
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+    
+}
+.contenedor figure{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+
+}
+.contenedor figure:nth-child(1){transform:rotateY(60deg) translateZ(300px);}
+
+.contenedor figure:nth-child(2){transform:rotateY(120deg) translateZ(300px);}
+
+.contenedor figure:nth-child(3){transform:rotateY(180deg) translateZ(300px);}
+
+.contenedor figure:nth-child(4){transform:rotateY(240deg) translateZ(300px);}
+
+.contenedor figure:nth-child(5){transform:rotateY(300deg) translateZ(300px);}
+
+.contenedor figure:nth-child(6){transform:rotateY(360deg) translateZ(300px);}
+
+.contenedor img{
+    margin:40px;
+    width: 80%;
+    height: 200px;
+    display: inline-block;
+    
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+.btn{
+    width: 300px;
+    color:#fefefe;
+    text-align: center;
+    margin-left: 800px;
+    margin-top: 50px;
+    background: #0b22aa;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 2em;
+    display: flex;
+    flex: top;
+}
+
+
+/*____________proyectos-----------*/
+
+
+.proyectos img{
+    box-shadow: 10px 20px 30px 15px #000000;
+    width: 40%;
+}
+.encriptador, .ahorcado{
+    display: flex;
+    gap:1rem;
+    padding:2rem 0;
+    margin: 30px;
+}
+.encriptador .detalle, .ahorcado .detalle{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.detalle a{
+    padding: 30px;
+    color:#000000;
+    margin:20px;
+    background: #33afe0;
+    border-radius: 50px;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.detalle a:hover{
+    transform: scale(1.2);
+    background:#569ae7 ;
+}
+/*__________________-contacto__________*/
+form h2,form p{
+    text-align: center;
+    line-height: 1.4em;
+    color: #0b22aa;
+    margin: 30px;
+}
+form label,form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-patron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 80%;
+}
+.contacto{
+    width: 50%;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #0b22aa;
+    background: #e4e00a;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+    margin: 20px 0;
+}
+.contacto:hover{
+    transform: scale(1.2);
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #BBBBBB;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:414px) {
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    nav{
+        left: 0;
+        top: 123px;
+        width: 100%;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        height: 0;
+        transition: all 300ms ease;
+        background-color: rgb(164, 172, 179);
+       
+        opacity: 0;
+        visibility: hidden;
+        
+
+    }
+    nav a:hover{
+        color: #c78c19;
+        text-decoration: none;
+        transform: scale(1);
+      
+    }
+    nav a{
+        display: block;
+        padding: 12px;
+
+    }
+    .icon-menu{
+        display: flex;
+    }
+    #check-menu:checked~nav ul{
+        height: 500px;
+        visibility: visible;
+        opacity: 1;
+
+    }
+    #label-check{
+        display: inline-block;
+    }
+    .caja{
+        width: auto;
+        padding: 30px;
+        
+    }
+    h1 img{
+        display:inline;
+        width: 50px;
+    }
+    .principal,.sobre-mi, .sobre-mi p,.hobbies, .proyectos, .formulario{
+        width: 100%;
+    }
+    .redes-sociales{
+       
+        padding: 20px;
+        
+    }
+    
+    
+    .redes-sociales a{
+        font-size: 30px;
+       
+    }
+    .habilidades{
+   
+        width: 100%;
+        
+      
+    }
+    .hobbies img{
+        width: 120px;
+
+    }
+    .btn{
+        width: 80%;
+        margin-left: 30px;
+        
+    }
+    
+.contenedor figure:nth-child(1){transform:rotateY(60deg) translateZ(150px);}
+
+.contenedor figure:nth-child(2){transform:rotateY(120deg) translateZ(150px);}
+
+.contenedor figure:nth-child(3){transform:rotateY(180deg) translateZ(150px);}
+
+.contenedor figure:nth-child(4){transform:rotateY(240deg) translateZ(150px);}
+
+.contenedor figure:nth-child(5){transform:rotateY(300deg) translateZ(150px);}
+
+.contenedor figure:nth-child(6){transform:rotateY(360deg) translateZ(150px);}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left:0;}
+    25%{margin-left: -100%;}
+    30%{margin-left: -200%;}
+    40%{margin-left: -300%;}
+    60%{margin-left: -400%;}
+    70%{margin-left: -500%;}
+    100%{margin-left: -600%;}
+    
+    
+
+}
+.proyectos img{
+    width: 100%;
+}
+.detalle a{
+    padding:15px;
+    text-align: center;
+}
+
+.encriptador, .ahorcado{
+    display:block;
+}
+.contacto{
+    width: 100%;
+    padding: 20px 30px;
+}
+      
+
+    
+}
+
+
+    

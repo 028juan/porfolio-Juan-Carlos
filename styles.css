@@ -7,7 +7,12 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
+main, .principal, .sobre-mi{
+    background: radial-gradient(#d9edf7 40%,#90999c,#575e58,#71758a);
+}
+
 header{
     background-color: #BBBBBB;
     position: fixed;
@@ -54,7 +59,6 @@ h1 img{
 nav{   
       
     position: fixed;
-    
     margin-right: 20px;
     z-index: 99999;
     display: inline-block;
@@ -69,7 +73,6 @@ nav li{
 }
 nav a{
     width: 100%;
-    
     align-items: center;
     padding: 14px;
     text-transform: uppercase;
@@ -85,7 +88,7 @@ nav a:hover{
   
 }
 .icon-menu{
-    font-size: 50px;
+    font-size: 30px;
     color: #000;
     cursor: pointer;
     width: 26px;
@@ -105,7 +108,7 @@ nav a:hover{
 .principal, .sobre-mi{
     padding: 3em 0;
     background: #fefefe;
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
     padding: 142px 50px;
 
@@ -138,7 +141,7 @@ nav a:hover{
     font-size: 20px;
     font-style: italic;
     text-align: center;
-    width: 940px;
+    width: 100%;
 }
 
 /*----------skills*/
@@ -148,65 +151,166 @@ nav a:hover{
     
 
 }
-.habilidades{
-   
-    width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    
-  
-}
-.habilidades h2{
-    text-align: center;
-    font-weight: bold;
-}
-.habilidades ul{
-    display: flex;
-    padding: 0;
-    width: 95%;
-    animation: cambio 15s infinite;   
-    animation-direction: alternate;
-}
-.habilidades li{
-    text-align: center; 
-    padding:30px 50px;
-    border:2px solid black;
-    border-radius: 20px;
-    margin: 10px 30px 10px 40px;
-    width: 100%;
-    background: #c1d40e;
-    
-    
+
+/* ==========================================================================
+	Estilos para un espect en vertical
+========================================================================== */
+@media screen and (orientation:portrait){
+	.habilidades{
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+        
+    @keyframes cambio2 {
+        0%{
+            left: 0%;
+        }
+        9%{
+            left: 0%;
+        }
+        18%{
+            left: -100%;
+        }
+        27%{
+            left: -100%;
+        }
+        36%{
+            left: -200%;
+        }
+        45%{
+            left: -200%;
+        }
+        54%{
+            left: -300%;
+        }
+        63%{
+            left: -300%;
+        }
+        72%{
+            left: -400%;
+        }
+        81%{
+            left: -400%;
+        }
+        90%{
+            left: -500%;
+        }
+        100%{
+            left: -500%;
+        }
+    }
+    .habilidades ul {
+            display: flex;
+            padding: 0;
+            width: 600%;
+            position: relative;
+            animation: cambio2 15s linear infinite alternate;
+        }
+            .habilidades li {
+                text-align: center;
+                padding: 30px 50px;
+                border: 2px solid black;
+                border-radius: 20px;
+                background: #c1d40e;
+                width: calc((100% / 6) - 60px);
+                box-sizing: border-box;
+                margin: 0px 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+            }
+                .habilidades img {
+                    width: 150px;
+                    height: auto;
+                    margin: 0px 0px 20px;
+                }
 }
 
-.habilidades img{
-      
-    width: 150px;
-    height: 200px;
-    margin: 20px 10px;
-    
 
-   
-}
-
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left:0;}
-    50%{margin-left: -50%;}
-    100%{margin-left: -100%;}
-    
-    
-
+/* ==========================================================================
+	Estilos para un espect en horizontal
+========================================================================== */
+@media screen and (orientation:landscape){
+    .habilidades{
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+        
+    @keyframes cambio2 {
+        0%{
+            left: 0%;
+        }
+        14.28%{
+            left: 0%;
+        }
+        28.57%{
+            left: -33.33%;
+        }
+        42.85%{
+            left: -33.33%;
+        }
+        57.14%{
+            left: -66.66%;
+        }
+        71.42%{
+            left: -66.66%;
+        }
+        85.71%{
+            left: -100%;
+        }
+        100%{
+            left: -100%;
+        }
+    }
+    .habilidades ul {
+            display: flex;
+            padding: 0;
+            width: 200%;
+            position: relative;
+            animation: cambio2 15s linear infinite alternate;
+        }
+            .habilidades li {
+                text-align: center;
+                padding: 30px 50px;
+                border: 2px solid black;
+                border-radius: 20px;
+                background: #c1d40e;
+                width: calc((100% / 6) - 60px);
+                box-sizing: border-box;
+                margin: 0px 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+            }
+                .habilidades img {
+                    width: 150px;
+                    height: auto;
+                    margin: 0px 0px 20px;
+                }
 }
 
 
 
 /*--------------hobbies*/
 
-.hobbies, .proyectos, .formulario{
-    width: 940px;
+.hobbies, .proyectos{
+    width: 100%;
     margin:0 auto;
     padding: 142px 50px;
+}
+.formulario{
+    width: 70%;
+    margin:0 auto;
+    padding: 142px 50px;
+
 }
 
 .hobbies li{
@@ -217,8 +321,8 @@ nav a:hover{
     text-align: center;
 }
 .hobbies img{
-    width: 300px;
-    height: 260px;
+    width: 50%;
+    height: 300px;
     margin:30px;
     
     box-shadow: 10px 20px 30px 15px #000000;
@@ -286,40 +390,91 @@ nav a:hover{
 }
 
 .btn{
-    width: 300px;
+    width: 50%;
     color:#fefefe;
     text-align: center;
-    margin-left: 800px;
-    margin-top: 50px;
+
+    margin-top: 80px;
     background: #0b22aa;
     padding: 20px 30px;
     border-radius: 30px;
     font-size: 2em;
-    display: flex;
-    flex: top;
+    
+  
 }
 .oculto{
     display: none;
 }
 
+/*__________________galeria de certificados____________*/
+
+.diplomas{
+
+    max-width: 100%;
+    margin: 40px 20px 40px 50px;
+}
+.carrusel-contenedor{
+    position: relative;
+}
+.carrusel-anterior, .carrusel-siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border:none;
+    top:calc(50% - 35px);
+    cursor:pointer;
+    line-height: 30px;
+    text-align: center;
+    background:#000000;
+    color: white;
+    opacity: 50%;
+
+}
+.carrusel-anterior{
+    left: -30px;
+}
+.carrusel-siguiente{
+    right: -30px;
+}
+.carrusel-anterior:hover, .carrusel-siguiente:hover{
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
 
 /*____________proyectos-----------*/
 
 
-.proyectos img{
+   
+
+.imgencriptador, .imgahorcado{
     box-shadow: 10px 20px 30px 15px #000000;
-    width: 40%;
+    width: 50%;
 }
 .encriptador, .ahorcado{
     display: flex;
     gap:1rem;
     padding:2rem 0;
     margin: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+
+    
 }
 .encriptador .detalle, .ahorcado .detalle{
     display: flex;
     flex-direction: column;
     margin:auto;
+    width: 30%;
 }
 .detalle a{
     padding: 30px;
@@ -331,6 +486,7 @@ nav a:hover{
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 .detalle a:hover{
     transform: scale(1.2);
@@ -386,7 +542,7 @@ footer{
 
 
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:750px) {
     header{
         position: fixed;
         width: 100%;
@@ -485,33 +641,27 @@ footer{
 
 .contenedor figure:nth-child(6){transform:rotateY(360deg) translateZ(150px);}
 
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left:0;}
-    25%{margin-left: -100%;}
-    30%{margin-left: -200%;}
-    40%{margin-left: -300%;}
-    60%{margin-left: -400%;}
-    70%{margin-left: -500%;}
-    100%{margin-left: -600%;}
-    
-    
 
-}
-.proyectos img{
-    width: 100%;
-}
+
 .detalle a{
-    padding:15px;
+    padding:25px;
     text-align: center;
 }
-
-.encriptador, .ahorcado{
-    display:block;
+.encriptador,.ahorcado{
+    display: block;
 }
+.imgencriptador,.imgahorcado{
+    width: 100%;
+}
+
 .contacto{
     width: 100%;
     padding: 20px 30px;
+}
+.encriptador .detalle, .ahorcado .detalle{
+    
+    width: auto;
+    margin:50px;
 }
       
 

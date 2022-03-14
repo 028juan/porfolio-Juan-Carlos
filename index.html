@@ -4,10 +4,15 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>porfolio</title>
-        <link rel="stylesheet" href="styles.css">
+        
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script defer src="muestreo.js"></script>
+        
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+        
+        <link rel="stylesheet" href="styles.css">
+        
        
 
     </head>
@@ -118,11 +123,147 @@
                     
                 </div>
             </section>
-            <section class="diplomas">
-                <a class="btn" href="#certificados" onclick="verDiploma('dipall');">Certificados</a>         
+            <a class="btn"  onclick="verDiploma('dipall');">Certificados</a> 
+            
+            <section class="diplomas">              
                 
                 <div id="dipall" class="oculto">
-                    <img src="certificados/argentina_programa.png">
+                    <div class="carrusel">
+                        <div class="carrusel-contenedor">
+                            <button aria-label="Anterior" class="carrusel-anterior">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <div class="carrusel-lista">
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/argentina_programa.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/YQP-DO-Certificado – Yo Quiero Programar1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/DIPLOMA DE FUNDAMENTOS DE PROGRAMACIÓN-UTN1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/Alura_espanhol FOCO1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/CANVAS 1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/canvas21.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/CICLO DE VIDA DEL PRODUCTO1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/PRODUCTIVIDAD1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/EMPRENDIMIENTO1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/FUNDAMENTO DE AGILIDAD1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/GESTION AGIL1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/git1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/HABITOS DE LIDERASGO1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/HABITOS1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/ORGANIZACION EQUIPOS AGILES1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/LINKEDIN1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/pitch entrevistas1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/LEAN STANDUP1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/html5 y css3 1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/html5 y css3 2.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/html5 y css3 3.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/html5 y css3 4.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/javascript introduccion al lenguaje web.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/js primerosPasos1.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/js2.png">
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/logicaprogramacion.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/logica parte2.png">
+
+                                </div>
+                                <div class="carrusel-elemento">
+                                    <img src="certificados/logica parte3.png">
+
+                                </div>
+                            </div>
+
+
+
+                            <button aria-label="Siguiente" class="carrusel-siguiente">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                            
+
+                        </div>
+                        <div role="tablist" class="carrusel-indicadores">
+
+                        </div>
+                        
+                        
+
+                    </div>
+                   
+                   
 
 
                 </div>
@@ -133,7 +274,7 @@
             <section  class="proyectos">
                 <h3 class="titulo-principal">PROYECTOS</h3>
                 <div class="encriptador">
-                    <img src="imagenes/encriptador.png">
+                    <img class="imgencriptador"src="imagenes/encriptador.png">
                     <div class="detalle">
                         <a href="https://028juan.github.io/primer-challenge-one-oracle/">Demo</a>
                         <a href="https://github.com/028juan/primer-challenge-one-oracle">Repositorio</a>
@@ -141,7 +282,7 @@
 
                 </div>
                 <div class="ahorcado">
-                    <img src="imagenes/ahorcado.png">
+                    <img class="imgahorcado"src="imagenes/ahorcado.png">
                     <div class="detalle">
                         <a href="https://028juan.github.io/challenge-oracle-hangman/">Demo</a>
                         <a href="https://github.com/028juan/challenge-oracle-hangman">Repositorio</a>
@@ -203,6 +344,9 @@
             <p>2022</p>
 
         </footer>
+        <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+        
+        <script defer src="muestreo.js"></script>
     </body>
 
     

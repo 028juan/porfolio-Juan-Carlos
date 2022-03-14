@@ -9,9 +9,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
-main, .principal, .sobre-mi{
-    background: radial-gradient(#d9edf7 40%,#90999c,#575e58,#71758a);
+main{
+    background: radial-gradient(#dce3e7 40%,#94a1a5,#929792,#71758a);
 }
+
+
+
 
 header{
     background-color: #BBBBBB;
@@ -107,10 +110,10 @@ nav a:hover{
 }
 .principal, .sobre-mi{
     padding: 3em 0;
-    background: #fefefe;
     width: 100%;
     margin: 0 auto;
     padding: 142px 50px;
+    background: linear-gradient(rgba(243, 239, 239, 0.733));
 
 }
 .tecnologiaaaa{
@@ -496,13 +499,14 @@ nav a:hover{
 form h2,form p{
     text-align: center;
     line-height: 1.4em;
-    color: #0b22aa;
+    color: #ec7819;
     margin: 30px;
 }
 form label,form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+    color:#e7f713;
 }
 .input-patron{
     display: block;
